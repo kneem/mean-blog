@@ -1,0 +1,38 @@
+<ul class="nav navbar-nav navbar-right actions-menu">
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-gear"></i> Actions
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+            <li>
+                <a ui-sref="blogs.posts.create({action: create})"><i class="fa fa-plus"></i> Add Blog Post</a>
+            </li>
+            <li>
+                <a><i class="fa fa-pencil"></i> Edit Blog</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a><i class="fa fa-trash"></i> Delete Blog</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<ul class="blog-posts">
+    <li data-ng-repeat="post in posts">
+        <h2>
+            <a ui-sref="blogs.posts.detail({postId: post._id})">{{post.title}}</a>
+            <a class="delete-post" data-ng-click="deletePost(post._id)"><i class="fa fa-trash"></i></a>
+        </h2>
+        <p>{{post.body | limitTo:40}}...</p>
+        <div class="block-divider">
+            <div class="line col-md-3"></div>
+            <span class="col-md-4"><i class="fa fa-clock-o"></i>Posted on {{post.date | date:"MMMM d, y 'at' h:mm a"}}</span>
+            <div class="line col-md-3"></div>
+        </div>
+    </li>
+    <li class="empty-blog" ng-show="!posts.length">
+        <h2>It's lonely in here...</h2>
+        <p>Select 'Add Blog Post' from the actions menu to create a new blog post</p>
+    </li>
+</ul>

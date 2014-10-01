@@ -1,0 +1,29 @@
+{
+  "name": "mean-blog",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~1.9.1",
+    "angular": "latest",
+    "angular-resource": "latest",
+    "angular-cookies": "latest",
+    "angular-mocks": "latest",
+    "angular-route": "latest",
+    "angular-bootstrap": "0.10.0",
+    "angular-ui-router": "#master",
+    "fontawesome": "~4.2.0",
+    "lodash": "~2.4.1",
+    "bootstrap": "~3.2.0",
+    "ng-file-upload": "~1.6.12",
+    "ng-file-upload-shim": "~1.6.12"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+      "css": "docs/assets/css/bootstrap*.css",
+      "js": "docs/assets/js/bootstrap.js",
+      "img": "docs/assets/img/glyphicons-halflings*.png"
+    },
+    "angular-ui-utils": {
+      "modules": "modules/route/route.js"
+    }
+  }
+}

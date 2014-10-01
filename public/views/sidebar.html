@@ -1,0 +1,7 @@
+<ul class="nav">
+    <li data-ng-repeat="blog in blogs">
+        <a ui-sref="blogs.posts({id: blog._id})"><i class="fa fa-newspaper-o"></i> {{blog.title}}
+        </a>
+    </li>
+    <li><a ui-sref="blogs.create({action: create})"><i class="fa fa-plus-circle"></i> Create New Blog</a></li>
+</ul>

@@ -1,0 +1,6 @@
+{
+    "db": "mongodb://localhost/mean-dev",
+    "app": {
+        "name": "mean-blog - An example blog using the MEAN stack. - Development"
+    }
+}

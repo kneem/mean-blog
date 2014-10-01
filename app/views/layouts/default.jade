@@ -1,0 +1,14 @@
+doctype html
+html(ng-app='mean')
+    include ../includes/head
+    body
+        .page-container
+            .navbar.navbar-default.navbar-fixed-top(role='navigation')
+                .container
+                    .navbar-header
+                        a.navbar-brand(href='#!')
+                            |Blog
+            .container
+                .row.row-offcanvas.row-offcanvas-left
+                    block content
+        include ../includes/foot

@@ -1,0 +1,197 @@
+/*Palette:
+main: #428BCA
+light: #A0D3FF
+medium: #53AFFF
+medium-darker: #3596D6
+medium-dark: #438CCC
+dark: #50697F
+
+18334A
+84AED3
+2F3E4A
+316897
+*/
+
+* {
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+html {
+    height: 100%;
+    background: url('../img/furley/furley.png') repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+   only screen and (min--moz-device-pixel-ratio: 1.3),
+   only screen and (-o-min-device-pixel-ratio: 2.6/2),
+   only screen and (min-device-pixel-ratio: 1.3),
+   only screen and (min-resolution: 124.8dpi),
+   only screen and (min-resolution: 1.3dppx) {
+       html {
+           background: url('../img/furley/furley-2x.png') repeat / 100%;
+       }
+       .page-container {
+           background: url('../img/furley/furley-2x.png') repeat / 100%;
+       }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+.index {
+    color: #50697F;
+}
+
+.index h1 {
+    font-size: 48px;
+}
+
+.page-container {
+    background: url('../img/furley/furley.png') repeat;
+}
+
+.page-container > .container {
+    padding-top: 70px;
+}
+
+.page-container .navbar {
+    background-image: linear-gradient(to bottom, #428BCA 0%, #3374AC 100%);
+}
+
+.page-container .navbar a {
+    color: #F1F1F1;
+}
+
+.page-container .navbar a:hover {
+    color: #FFF;
+}
+
+a[ui-sref] {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+i.fa {
+    padding-right: 5px;
+}
+
+.blog-posts {
+    padding-left: 0;
+}
+
+.blog-posts li:first-child {
+    padding: 0;
+}
+.blog-posts li {
+    list-style-type: none;
+    padding-top: 18px;
+}
+
+.blog-posts li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-posts li p {
+    color: #777;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+
+.blog-posts li span {
+    word-spacing: 1px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.blog-posts h2:hover a.delete-post {
+    display: block;
+    cursor: pointer;
+}
+
+.blog-posts h2 a.delete-post {
+    display: none;
+    font-size: 18px;
+    float: right;
+    margin: 6px 22px 0 0;
+}
+
+.empty-blog h2 {
+    color: #50697F;
+}
+
+.block-divider {
+    margin-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    color: #949494;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.block-divider .line {
+    display: inline-block;
+    border-top: 1px solid #C0C0C0;
+    height: 0;
+    margin: 0 4px;
+    border-bottom: 1px solid #FFF;
+    position: relative;
+    top: 8px;
+}
+
+.sidebar li {
+    border: 0 #F2F2F2 solid;
+    border-bottom-width: 1px;
+}
+
+.sidebar li:last-child {
+    border: none;
+}
+
+.actions-menu a.dropdown-toggle {
+    background: none;
+}
+
+.actions-menu a.dropdown-toggle:hover {
+    cursor: pointer;
+    background: none;
+}
+
+.actions-menu a.dropdown-toggle:focus {
+    background: none;
+}
+
+.actions-menu .dropdown-menu {
+    background: #F7F7F7;
+}
+
+.actions-menu .dropdown-menu > li > a {
+    color: #5F5F5F;
+    padding-left: 10px;
+}
+
+.actions-menu .dropdown-menu > li > a:hover {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #3596D6;
+    background-image: linear-gradient(to bottom, #3596D6 0%, #3596D6 100%);
+}
+
+.counter {
+    text-align: right;
+}
+
+.img-preview {
+    min-height: 180px;
+    height: 180px;
+}

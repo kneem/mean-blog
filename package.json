@@ -1,0 +1,53 @@
+{
+  "name": "mean-blog",
+  "description": "An example blog using the MEAN stack.",
+  "version": "0.0.1",
+  "private": false,
+  "author": "Nima Dehnashi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neemur/mean-blog.git"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "scripts": {
+    "start": "node node_modules/grunt-cli/bin/grunt",
+    "test": "node node_modules/grunt-cli/bin/grunt test"
+  },
+  "dependencies": {
+    "async": "latest",
+    "body-parser": "latest",
+    "compression": "latest",
+    "connect-flash": "latest",
+    "connect-mongo": "latest",
+    "consolidate": "latest",
+    "cookie-parser": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "forever": "latest",
+    "grunt": "latest",
+    "grunt-cli": "latest",
+    "jade": "latest",
+    "method-override": "latest",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "multiparty": "^3.3.2",
+    "node-uuid": "^1.4.1",
+    "serve-static": "latest",
+    "underscore": "latest",
+    "view-helpers": "latest"
+  },
+  "devDependencies": {
+    "grunt-concurrent": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-mocha-test": "latest",
+    "grunt-nodemon": "latest",
+    "load-grunt-tasks": "~0.1.0",
+    "should": "latest",
+    "supertest": "latest",
+    "time-grunt": "~0.1.1"
+  }
+}

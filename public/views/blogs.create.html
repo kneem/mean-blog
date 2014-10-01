@@ -1,0 +1,16 @@
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="blog-title" class="col-sm-2 control-label">Title:</label>
+        <div class="col-sm-10" data-ng-class="{'has-error': invalid === true}">
+            <input type="text" class="form-control" id="blog-title" placeholder="Blog title" data-ng-model="blogTitle" ng-keyup="$event.keyCode === 13 && createBlog()" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="button" class="btn btn-primary" data-ng-click="createBlog()">
+                <i class="fa fa-floppy-o"></i> Save Blog
+            </button>
+            <button type="button" class="btn btn-default" data-ng-click="goBack()">Cancel</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,12 @@
+<div class="col-xs-6 col-md-3" data-ng-hide="!post.image.length">
+    <div class="thumbnail">
+        <img class="img-preview" data-ng-src="/uploads/{{post.image}}" />
+    </div>
+</div>
+<div class="index container">
+    <h1>{{post.title}}</h1>
+    <span>{{post.date | date:"MMM d, y 'at' h:mm a"}}</span>
+    <blockquote>
+        <p>{{post.body}}</p>
+    </blockquote>
+</div>
